@@ -1,0 +1,78 @@
+/* Media Query Mixins */
+html {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+@media only screen and (min-width: 1100px) {
+  html {
+    font-size: 1.5rem;
+  }
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  color: #ec7705;
+}
+
+.site-header nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.site-header nav li {
+  list-style: none;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .site-header nav li {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .site-header nav li {
+    margin-right: 50px;
+  }
+}
+.site-header nav a {
+  display: block;
+  padding: 10px;
+  background-color: #ec7705;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-a, .btn-b {
+  display: inline-block;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ec7705;
+  border-radius: 7px;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-b {
+  background-color: #fdc48d;
+  /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fdc48d));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, white, #fdc48d);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, white, #fdc48d);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(top, white, #fdc48d);
+  /* IE10 */
+  background-image: -o-linear-gradient(top, white, #fdc48d);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(to bottom, white, #fdc48d);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="white", EndColorStr="#fdc48d");
+}
+
+/*# sourceMappingURL=compiled.css.map */
