@@ -2,25 +2,22 @@
     ul {
         padding: 0;
         margin: 0;
-        display: flex;
-        @include bp-babyBear {
-            flex: none;
-            margin-right: 0;
-            margin-bottom: 2px;
-        }
-    }
+        @extend .group;
+	}
 
     li {
         list-style: none;
-        margin-right: 10px;
-        @include bp-babyBear {
-            width: 50%;
-        }
-        @include bp-papaBear {
-            margin-right: 50px;
-        }
-    }
-
+        float: left;
+		margin-right: 10px;
+		@include bp-babyBear {
+			float: none;
+			margin-right: 0;
+			margin-bottom: 2px;
+		}
+		@include bp-papaBear {
+			margin-right: 50px;
+		}
+	}
     a {
         display: block;
         padding: 10px;

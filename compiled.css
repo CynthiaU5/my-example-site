@@ -20,22 +20,17 @@ a {
 .site-header nav ul {
   padding: 0;
   margin: 0;
-  display: flex;
-}
-@media only screen and (max-width: 480px) {
-  .site-header nav ul {
-    flex: none;
-    margin-right: 0;
-    margin-bottom: 2px;
-  }
 }
 .site-header nav li {
   list-style: none;
+  float: left;
   margin-right: 10px;
 }
 @media only screen and (max-width: 480px) {
   .site-header nav li {
-    width: 50%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 2px;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -78,6 +73,21 @@ a {
   /* Opera 11.10+ */
   background-image: linear-gradient(to bottom, white, #fdc48d);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="white", EndColorStr="#fdc48d");
+}
+
+.group:before, .site-header nav ul:before,
+.group:after,
+.site-header nav ul:after {
+  content: "";
+  display: table;
+}
+
+.group:after, .site-header nav ul:after {
+  clear: both;
+}
+
+.group, .site-header nav ul {
+  zoom: 1;
 }
 
 /*# sourceMappingURL=compiled.css.map */

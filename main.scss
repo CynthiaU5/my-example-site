@@ -37,3 +37,17 @@ a {
     @extend .btn-a;
     @include verticalGradient(white, lighten($primaryColor, 30%) )
 }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
