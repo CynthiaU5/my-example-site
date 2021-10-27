@@ -3,16 +3,16 @@
         padding: 0;
         margin: 0;
         display: flex;
-    }
-
-    li {
-        list-style: none;
-        margin-right: 10px;
         @include bp-babyBear {
             flex: none;
             margin-right: 0;
             margin-bottom: 2px;
         }
+    }
+
+    li {
+        list-style: none;
+        margin-right: 10px;
         @include bp-papaBear {
             margin-right: 50px;
         }

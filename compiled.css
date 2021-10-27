@@ -22,16 +22,16 @@ a {
   margin: 0;
   display: flex;
 }
-.site-header nav li {
-  list-style: none;
-  margin-right: 10px;
-}
 @media only screen and (max-width: 480px) {
-  .site-header nav li {
+  .site-header nav ul {
     flex: none;
     margin-right: 0;
     margin-bottom: 2px;
   }
+}
+.site-header nav li {
+  list-style: none;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 1100px) {
   .site-header nav li {
